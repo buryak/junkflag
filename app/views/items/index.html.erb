@@ -1,5 +1,8 @@
 <h1>Items</h1>
 
 <% @items.each do |item| %>
-<%= item.title %>
+	<%= item.title %><br>
+	<%= item.description %><br>
+	<%= item.location %><br>
+	<img src="<%= item.picture %>" width="200">
 <% end %>

@@ -1,5 +1,5 @@
 Junkflag::Application.routes.draw do
-  root 'item#index'
+  root 'items#index'
   resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.
