@@ -12,6 +12,10 @@ gem 'sass-rails', '~> 4.0.0'
 # Use CarrierWave for uploading images.
 gem 'carrierwave'
 
+# Geolocater Gem for mapping items
+gem 'geocoder'
+gem 'gmaps4rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
