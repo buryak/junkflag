@@ -1,0 +1,28 @@
+<h1>Form</h1>
+
+<%= form_for(@item) do |f| %>
+<div class="field">
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+</div>
+
+<div class="field">
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+</div>
+
+<div class="field">
+	<%= f.label :picture %>
+	<%= f.text_field :picture %>
+</div>
+
+<div class="field">
+	<%= f.label :location %>
+	<%= f.text_field :location %>
+</div>
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+
+<% end %>
