@@ -1,8 +1,10 @@
 <h1>Items</h1>
 
+<%= link_to "Create New Item", new_item_url %><br>
+
 <% @items.each do |item| %>
-	<%= item.title %><br>
+	<strong><%= item.title %></strong><br>
 	<%= item.description %><br>
 	<%= item.location %><br>
-	<img src="<%= item.picture %>" width="200">
+	<img src="<%= item.picture %>" width="200"><br>
 <% end %>
