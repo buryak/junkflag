@@ -1,6 +1,6 @@
 <h1>Form</h1>
 
-<%= form_for(@item) do |f| %>
+<%= form_for @item, :html => {:multipart => true} do |f| %>
 <div class="field">
 	<%= f.label :title %>
 	<%= f.text_field :title %>
@@ -12,13 +12,12 @@
 </div>
 
 <div class="field">
-	<%= f.label :picture %>
-	<%= f.text_field :picture %>
-</div>
-
-<div class="field">
 	<%= f.label :location %>
 	<%= f.text_field :location %>
+</div>
+
+<div>
+	<%= f.file_field :picture %>
 </div>
 
 <div class="actions">
