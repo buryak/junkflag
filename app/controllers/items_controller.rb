@@ -1,6 +1,15 @@
 class ItemsController < ApplicationController
 	def index
 		@items = Item.all
+		@hash = Gmaps4rails.build_markers(@items) do |item, marker|
+  		marker.lat item.latitude
+  		marker.lng item.longitude
+  		marker.infowindow item.description
+  		marker.picture({
+       "url" => "http://aux.iconpedia.net/uploads/1331985062176136161.png",
+       "width" =>  32,
+       "height" => 32})
+		end
 	end
 
 	def show
