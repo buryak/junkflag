@@ -50,3 +50,6 @@ end
 
 # User authentication
 gem 'sorcery'
+
+gem 'foundation-rails'
+gem 'modernizr-rails'
