@@ -17,6 +17,8 @@
   <div id="map" style='width: 800px; height: 400px;'></div>
 </div>
 <%= content_for :scripts do %>
+
+<!-- should move the script below to it's own javascript file and reference it, as it will get big once we add things to it -->
 <script type="text/javascript">
   handler = Gmaps.build('Google');
   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
