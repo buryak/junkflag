@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: junkflag_development
   pool: 5
-  username: lukewalker
+  username: yuri
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +48,7 @@ test:
   encoding: unicode
   database: junkflag_test
   pool: 5
-  username: lukewalker
+  username: yuri
   password:
 
 production:
@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: junkflag_production
   pool: 5
-  username: lukewalker
+  username: yuri
   password:
