@@ -9,15 +9,6 @@
 <%= link_to "Create New Item", new_item_url %><br>
 
 
-<% @items.each do |item| %>
-	<strong><%= item.title %></strong><br>
-	<%= item.description %><br>
-	<%= item.location %><br>
-  <%= item.latitude %><br>
-  <%= item.longitude %><br>
-	<img src="<%= item.picture %>" width="200"><br>
-<% end %>
-
 
 <%= content_for :scripts do %>
 
