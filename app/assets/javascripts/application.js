@@ -17,5 +17,4 @@
 //= require underscore
 //= require gmaps/google
 //= require_tree .
-
-$(document).foundation();
+//= require map

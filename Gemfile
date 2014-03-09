@@ -53,3 +53,9 @@ gem 'sorcery'
 
 gem 'foundation-rails'
 gem 'modernizr-rails'
+
+gem 'gon'
+
+group :development do
+	gem 'quiet_assets'
+end

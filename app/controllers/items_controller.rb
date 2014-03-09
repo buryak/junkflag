@@ -4,9 +4,10 @@ class ItemsController < ApplicationController
 		@hash = Gmaps4rails.build_markers(@items) do |item, marker|
   		marker.lat item.latitude
   		marker.lng item.longitude
+  		
   		marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => item})
   		marker.picture({
-       "url" => "https://cdn1.iconfinder.com/data/icons/basicset/flag_32.png",
+       "url" => "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png",
        "width" =>  32,
        "height" => 32})
 		end
