@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
 				"height" => 32})
 		end
 		respond_to do |format|
-			# format.html {render html:}
+			format.html
 			format.json {render json: @hash}
 		end
 	end
