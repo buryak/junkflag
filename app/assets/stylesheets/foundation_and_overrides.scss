@@ -1,10 +1,12 @@
-#map img { 
-  max-width: none;
+html, body {
+  height: 100%;
+  margin: 0;
 }
-#map label { 
-  width: auto; display:inline; 
-} 
 
+#map{
+  height: 100%;
+  margin: 0;
+}
 //
 // FOUNDATION SETTINGS
 //

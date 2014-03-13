@@ -14,7 +14,7 @@ gem 'carrierwave'
 
 # Geolocater Gem for mapping items
 gem 'geocoder'
-gem 'gmaps4rails'
+# gem 'gmaps4rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
