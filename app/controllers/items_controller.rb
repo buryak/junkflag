@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 	def index
 		@items = Item.all
-		# @hash = Gmaps4rails.build_markers(@items) do |item, marker|
+		# @hash = Gmap.build_markers(@items) do |item, marker|
 		# 	marker.lat item.latitude
 		# 	marker.lng item.longitude
 
@@ -11,10 +11,10 @@ class ItemsController < ApplicationController
 		# 		"width" =>  32,
 		# 		"height" => 32})
 		# end
-		# respond_to do |format|
-		# 	format.html
-		# 	format.json {render json: @hash}
-		# end
+		respond_to do |format|
+			format.html
+			format.json {render json: @hash}
+		end
 	end
 
 	def show
