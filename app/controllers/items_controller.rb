@@ -1,19 +1,9 @@
 class ItemsController < ApplicationController
 	def index
 		@items = Item.all
-		# @hash = Gmap.build_markers(@items) do |item, marker|
-		# 	marker.lat item.latitude
-		# 	marker.lng item.longitude
-
-		# 	# marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => item})
-		# 	marker.picture({
-		# 		"url" => "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png",
-		# 		"width" =>  32,
-		# 		"height" => 32})
-		# end
 		respond_to do |format|
 			format.html
-			format.json {render json: @hash}
+			format.json {render json: @items}
 		end
 	end
 
