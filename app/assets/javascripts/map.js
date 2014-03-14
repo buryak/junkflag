@@ -14,14 +14,18 @@ $(document).ready(function(){
 		dataType: 'json',
 		method: 'GET'
 	}).done(function(data){
+		var bounds = new google.maps.LatLngBounds();
 		data.forEach(function(dataPoint) {
+			var point = new google.maps.LatLng(dataPoint.latitude, dataPoint.longitude);
 			var markerOptions = {
-				position: new google.maps.LatLng(dataPoint.latitude, dataPoint.longitude)
+				position: point
 			};
 			var marker = new google.maps.Marker(markerOptions);
 			marker.setMap(map);
 			markers.push(marker);
+			bounds.extend(point);
 		});
+		map.fitBounds(bounds);
 	});
 });
 
